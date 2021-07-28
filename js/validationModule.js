@@ -4,9 +4,9 @@ let name = document.querySelector("#name"),
   phone = document.querySelector("#phone"),
   age = document.querySelector("#age"),
   password = document.querySelector("#password"),
-  rePassword = document.querySelector("#repassword");
+  rePassword = document.querySelector("#rePassword");
 
-  // Create alert div element
+// Create alert div element
 let alertDanger = document.createElement("div");
 alertDanger.className = "alert-danger alert alert-danger";
 
@@ -67,18 +67,17 @@ function validatePassword() {
   if (!regexPassword.test(password.value)) {
     password.insertAdjacentElement("afterend", alertDanger);
     alertDanger.textContent = `Enter a valid password 
-    *Minimum eight characters, 
+    Minimum eight characters, 
       at least one letter and one number`;
   } else {
     alertDanger.remove();
-   
   }
 }
-// Check validate repassword
+// Check validate rePassword
 function validateRePassword() {
   if (password.value !== rePassword.value) {
     rePassword.insertAdjacentElement("afterend", alertDanger);
-    alertDanger.textContent = "Password dose not  match";
+    alertDanger.textContent = "Password doesn't  match";
   } else {
     alertDanger.remove();
   }
