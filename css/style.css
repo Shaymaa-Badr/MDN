@@ -1,0 +1,174 @@
+/* Global styles */
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background-color: #000;
+  font-family: 'Segoe UI Light', Tahoma, Verdana, sans-serif;
+  font-size: 16px;
+  line-height: 18.4px;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+/* Side menu styles */
+
+.sidebarMenu {
+  width: 300px;
+  height: 100%;
+  top: 0;
+  left: -250px;
+  z-index: 9999;
+}
+
+.navList {
+  width: 250px;
+  background-color: #000;
+}
+.navList ul li {
+  position: relative;
+}
+.nowPlaying,
+.popular,
+.trending,
+.upComing,
+.topRated,
+.contactUs {
+  position: absolute;
+  opacity: 0;
+}
+.nowPlaying {
+  top: 150px;
+}
+.popular {
+  top: 200px;
+}
+.trending {
+  top: 250px;
+}
+.topRated {
+  top: 300px;
+}
+.upComing {
+  top: 350px;
+}
+.contactUs {
+  top: 400px;
+}
+.navList ul li a,
+.socialIcons .icon {
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.4s ease-in-out;
+  -webkit-transition: 0.4s ease-in-out;
+  -moz-transition: 0.4s ease-in-out;
+  -ms-transition: 0.4s ease-in-out;
+  -o-transition: 0.4s ease-in-out;
+}
+
+.navList ul li:hover a {
+  color: #dc3545 !important;
+  margin-left: 7px;
+}
+.socialIcons .icon:hover {
+  color: #dc3545 !important;
+}
+.socialIcons {
+  top: 80%;
+  transform: translateX(50%);
+  -webkit-transform: translateX(50%);
+  -moz-transform: translateX(50%);
+  -ms-transform: translateX(50%);
+  -o-transform: translateX(50%);
+}
+
+.copyRight {
+  top: 85%;
+  width: 200px;
+}
+
+.copyRight p {
+  color: #999;
+  line-height: 1.5rem;
+}
+
+.stripNav {
+  width: 60px;
+}
+
+.logoImg {
+  width: 50px;
+  position: absolute;
+}
+
+.toggleMenuIcon {
+  position: absolute;
+  top: 50%;
+  font-size: 25px;
+  transform: translateX(50%);
+  -webkit-transform: translateX(50%);
+  -moz-transform: translateX(50%);
+  -ms-transform: translateX(50%);
+  -o-transform: translateX(50%);
+}
+
+.toggleMenuIcon .bars,
+.toggleMenuIcon .close {
+  cursor: pointer;
+}
+
+.toggleMenuIcon .close {
+  display: none;
+}
+
+.toggleMenuIcon .close i {
+  color: #000;
+}
+
+.InfoIcons {
+  cursor: pointer;
+  left: 20%;
+  top: 90%;
+  transform: translateX(50%);
+  -webkit-transform: translateX(50%);
+  -moz-transform: translateX(50%);
+  -ms-transform: translateX(50%);
+  -o-transform: translateX(50%);
+}
+
+/* Search section  */
+
+.searchForm .search,
+.contactForm .contact {
+  background-color: transparent;
+  border: none;
+  border-radius: 0;
+  border-bottom: 1px solid #ccc;
+  text-align: center;
+}
+
+/* Search section  */
+
+.movieLayer {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(225, 225, 225, 0.7);
+  transform: translateY(100%);
+  transition: 0.7s linear;
+  color: #000;
+}
+
+.moviePost:hover .movieLayer {
+  transform: translateY(0);
+}
+.movieLayer p {
+  line-height: 2rem;
+}
